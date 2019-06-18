@@ -14,7 +14,7 @@ public class Main {
         String[] strArray = task.split("(?<=\\.)");
         System.out.println(strArray[0]);
         String[] spaceArrray =strArray[0].split(" ");
-        System.out.println("Количество пробелов: "+ (spaceArrray.length-1));  // не указано количество пробелов всей строки task или до точки(вывел до точки)М
+        System.out.println("Количество пробелов: "+ (spaceArrray.length-1));  // не указано количество пробелов всей строки task или до точки(вывел до точки)
     }
 
     static boolean dividesByTwo(int a){
