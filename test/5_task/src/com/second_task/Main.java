@@ -104,6 +104,111 @@ public class Main {
                             System.out.println("Угадал");
                         break;}
                 }
+            }break;
+            case 8:{
+                int i=1;
+                while (i<=10){
+                    System.out.println(i);
+                    i++;
+                }
+            }
+            case 9:{
+                int i=10;
+                while (i>0){
+                    System.out.println(i);
+                    i--;
+                }
+            }break;
+            case 10:{
+                System.out.println("Введите строку :");
+                srt[0] = inStr.nextLine();
+                System.out.println("Введите число :");
+                a[0]= inInt.nextInt();
+                while (a[0]>0) {
+                System.out.println(srt[0]);
+                a[0]--;
+                }
+            }break;
+            case 11:{
+                int i = 0 ;
+                int j = 0;
+                while(j<10){
+                    while (i < 10){
+                        System.out.print("S");
+                        i++;
+                    }
+                    System.out.println();
+                    j++;
+                    i=0;
+                }
+            }break;
+            case 12:{
+                int[] table = {1,2,3,4,5,6,7,8,9,10};
+                int i = 0;
+                int j = 0;
+                while (i<10){
+                    while (j<10){
+                     System.out.print(" "+(table[i] * table[j]));
+                     j++;
+                    }
+                    System.out.println();
+                    i++;
+                    j=0;
+                }
+            }break;
+            case 13:{
+                for (int i = 2;i<=100;i=i+2){
+                    System.out.println(i);
+                }
+            }
+            case 14:{
+                System.out.println("Введите количество символов в строке");
+                int iMax = inInt.nextInt() ;
+                System.out.println("Введите количество строк");
+                int jMax = inInt.nextInt();
+
+
+                for(int j=0;j<jMax;j++){
+                    for(int i=0;i < iMax;i++){
+                        System.out.print("8");
+                    }
+                    System.out.println();
+                }
+            }break;
+            case 15:{
+                for(int j=0;j<10;j++){
+                    for(int i=0;i <j+1;i++){
+                        System.out.print("8");
+                    }
+                    System.out.println();
+                }
+            }
+            case 16:{
+                for (int i=0 ;i<10 ; i++){
+                    System.out.print("8");
+                }
+                System.out.println();
+                for (int i=0 ;i<10 ; i++){
+                    System.out.println("8");
+                }
+            }
+            case 17:{
+                System.out.println("Введите имя");
+                srt[0] = inStr.nextLine();
+                for (int i=0; i< 10 ;i++){
+                    System.out.println(srt[0]+" любит меня");
+                }
+            }
+            case 18:{
+                for (int i=30;i>=1;i--){
+                    System.out.println(i);
+                    try {
+                        Thread.sleep(100);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+                System.out.println("BOOM!!");
             }
         }
     }
