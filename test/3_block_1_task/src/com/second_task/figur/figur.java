@@ -1,21 +1,11 @@
 package com.second_task.figur;
 
-public abstract class   figur{
+public interface   figur{
     private String name;
     private int coord;
-    public void setName(String name){
-        this.name = name;
-    };
-    public String getName(){
-        return name;
-    };
-    public void setCoordinate(int coord){
-        this.coord = coord;
-    };
-    public int getCoordinate() {
-        return 0;
-    };
-    public int getArea() {
-        return 0;
-    };
+    public void setName(String name);
+    public String getName();
+    public void setCoordinate(int coord);
+    public int getCoordinate();
+    public int getArea();
 }
