@@ -1,22 +1,21 @@
 package com.second_task.figur;
 
-public class figur {
+public abstract class   figur{
     private String name;
-    private  int coordinate;
+    private int coord;
     public void setName(String name){
         this.name = name;
-    }
+    };
     public String getName(){
-        return this.name; //насколько я понимаю this здесь не нужен
-    }
-    public void setCoordinate(int coordinate){
-        this.coordinate = coordinate;
-    }
-
+        return name;
+    };
+    public void setCoordinate(int coord){
+        this.coord = coord;
+    };
     public int getCoordinate() {
-        return coordinate;
-    }
-    public int getArea(int a,int  b){
-        return a*b;
-    }
+        return 0;
+    };
+    public int getArea() {
+        return 0;
+    };
 }
