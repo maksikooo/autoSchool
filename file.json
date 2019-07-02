@@ -1,0 +1,1704 @@
+{
+  "end_time": 1562062478.7864017,
+  "results": [
+    {
+      "status": "ok"
+    },
+    {
+      "status": "ok"
+    },
+    {
+      "data": [
+        
+      ],
+      "status": "ok"
+    },
+    {
+      "data": [
+        {
+          "parametrized_definition": "var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);\nif (isChrome) {\n    exponea.update({\n        gcm_sender_id: \"1024014698547\"\n    });\n}",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "any"
+              }
+            ]
+          },
+          "type": "js",
+          "uses_overlay": false
+        },
+        {
+          "parametrized_definition": "function getLang() {\r\n     var pathname = window.location.pathname;\r\n     if ( pathname.indexOf('/ua/')>-1 ) return 1; //ua\r\n     else return 0; //ru\r\n}\r\nfunction addTextBlock() {\r\n   if ($$(\".detail-code-i\").length<1) return;\r\n   var goodsId=$$(\".detail-code-i\")[0].innerHTML;\r\n\r\n   if ($$(\".exponea-textblock\").length>0) return;\r\n    if (document.getElementsByName(\"delivery_block_container\").length>0 ) {\r\n        var newBlock = document.createElement('div');\r\n      newBlock.setAttribute(\"data-exponea\", \"exp018\");\r\n      newBlock.setAttribute(\"class\", \"cust-content-inner cust-content-indent exponea-textblock\");\r\n        if (getLang()==1 ) { newBlock.innerHTML = '<div style=\"display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-orient: horizontal; -webkit-box-direction: normal;-ms-flex-flow: row nowrap;flex-flow: row nowrap;align-items: center;\"><p style=\"margin-bottom:0;\"><span class=\"bold\">\u041f\u0440\u043e\u0434\u0430\u0432\u0435\u0446\u044c \u0433\u0430\u0440\u0430\u043d\u0442\u0443\u0454 \u043f\u0430\u043a\u0443\u0432\u0430\u043d\u043d\u044f </span>\u0437\u0430\u043c\u043e\u0432\u043b\u0435\u043d\u043e\u0433\u043e \u0442\u043e\u0432\u0430\u0440\u0443, \u044f\u043a\u0435 \u0437\u0430\u0431\u0435\u0437\u043f\u0435\u0447\u0438\u0442\u044c \u0446\u0456\u043b\u0456\u0441\u043d\u0456\u0441\u0442\u044c \u0442\u0430 \u0437\u0431\u0435\u0440\u0435\u0436\u0435\u043d\u043d\u044f \u0439\u043e\u0433\u043e \u0442\u043e\u0432\u0430\u0440\u043d\u043e\u0433\u043e \u0432\u0438\u0433\u043b\u044f\u0434\u0443</p></div>'; }\r\n        else { newBlock.innerHTML = '<div style=\"display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-orient: horizontal; -webkit-box-direction: normal;-ms-flex-flow: row nowrap;flex-flow: row nowrap;align-items: center;\"><p style=\"margin-bottom:0;\" ><span class=\"bold\">\u041f\u0440\u043e\u0434\u0430\u0432\u0435\u0446 \u0433\u0430\u0440\u0430\u043d\u0442\u0438\u0440\u0443\u0435\u0442 \u0443\u043f\u0430\u043a\u043e\u0432\u043a\u0443 </span>\u0437\u0430\u043a\u0430\u0437\u0430\u043d\u043d\u043e\u0433\u043e \u0442\u043e\u0432\u0430\u0440\u0430, \u043a\u043e\u0442\u043e\u0440\u0430\u044f \u043e\u0431\u0435\u0441\u043f\u0435\u0447\u0438\u0442 \u0446\u0435\u043b\u043e\u0441\u0442\u043d\u043e\u0441\u0442\u044c \u0438 \u0441\u043e\u0445\u0440\u0430\u043d\u043d\u043e\u0441\u0442\u044c \u0435\u0433\u043e \u0442\u043e\u0432\u0430\u0440\u043d\u043e\u0433\u043e \u0432\u0438\u0434\u0430</p></div>'; }\r\n      var blocksList = document.getElementsByName(\"delivery_block_container\")[0];\r\n      blocksList.insertBefore(newBlock, blocksList.children[1]);\r\n    }\r\n}\r\naddTextBlock();",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "/p"
+              }
+            ]
+          },
+          "type": "js",
+          "uses_overlay": false
+        },
+        {
+          "parametrized_definition": "function getLang() {\r\n     var pathname = window.location.pathname;\r\n     if ( pathname.indexOf('/ua/')>-1 ) return 1; //ua\r\n     else return 0; //ru\r\n}\r\n\r\nfunction addTextBlock () {\r\n    if (document.getElementsByClassName(\"detail-code-i\").length<1) return;\r\n    \r\n\r\n\tif (document.getElementsByClassName(\"exponea-textblock\").length>0) return;\r\n      if (document.getElementsByTagName(\"pp-delivery\").length>0 ) {\r\n\r\n      var newBlock = document.createElement('div');            \r\n      newBlock.setAttribute(\"class\", \"detail-dwp-i exponea-textblock\");\r\n      newBlock.innerHTML='<div style=\"display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-orient: horizontal; -webkit-box-direction: normal;-ms-flex-flow: row nowrap;flex-flow: row nowrap;align-items: center;\"><p class=\"detail-dwp-title-i\"><span class=\"bold\">\u041f\u0440\u043e\u0434\u0430\u0432\u0435\u0446\u044c \u0433\u0430\u0440\u0430\u043d\u0442\u0443\u0454 \u043f\u0430\u043a\u0443\u0432\u0430\u043d\u043d\u044f</span> \u0437\u0430\u043c\u043e\u0432\u043b\u0435\u043d\u043e\u0433\u043e \u0442\u043e\u0432\u0430\u0440\u0443, \u044f\u043a\u0435 \u0437\u0430\u0431\u0435\u0437\u043f\u0435\u0447\u0438\u0442\u044c \u0446\u0456\u043b\u0456\u0441\u043d\u0456\u0441\u0442\u044c \u0442\u0430 \u0437\u0431\u0435\u0440\u0435\u0436\u0435\u043d\u043d\u044f \u0439\u043e\u0433\u043e \u0442\u043e\u0432\u0430\u0440\u043d\u043e\u0433\u043e \u0432\u0438\u0433\u043b\u044f\u0434\u0443</p></div> ';\r\n      if ( getLang()==0 ) { newBlock.innerHTML='<div style=\"display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-orient: horizontal; -webkit-box-direction: normal;-ms-flex-flow: row nowrap;flex-flow: row nowrap;align-items: center;\"><p class=\"detail-dwp-title-i\"><span class=\"bold\">\u041f\u0440\u043e\u0434\u0430\u0432\u0435\u0446 \u0433\u0430\u0440\u0430\u043d\u0442\u0438\u0440\u0443\u0435\u0442 \u0443\u043f\u0430\u043a\u043e\u0432\u043a\u0443</span> \u0437\u0430\u043a\u0430\u0437\u0430\u043d\u043d\u043e\u0433\u043e \u0442\u043e\u0432\u0430\u0440\u0430, \u043a\u043e\u0442\u043e\u0440\u0430\u044f \u043e\u0431\u0435\u0441\u043f\u0435\u0447\u0438\u0442 \u0446\u0435\u043b\u043e\u0441\u0442\u043d\u043e\u0441\u0442\u044c \u0438 \u0441\u043e\u0445\u0440\u0430\u043d\u043d\u043e\u0441\u0442\u044c \u0435\u0433\u043e \u0442\u043e\u0432\u0430\u0440\u043d\u043e\u0433\u043e \u0432\u0438\u0434\u0430</p></div>';  \r\n      } \r\n         \r\n        var merchantBlock = document.getElementsByTagName(\"pp-delivery\")[0];\r\n        merchantBlock.insertBefore(newBlock, merchantBlock.children[1]);\r\n   \r\n   }\r\n\r\n}\r\naddTextBlock ();",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "any"
+              }
+            ]
+          },
+          "type": "js",
+          "uses_overlay": false
+        },
+        {
+          "parametrized_definition": "function getLang() {\r\n     var pathname = window.location.pathname;\r\n     if ( pathname.indexOf('/ua/')>-1 ) return 1; //ua\r\n     else return 0; //ru\r\n}\r\n\r\nfunction AddBanner() {\r\n  if (document.querySelector('.catalog-sort-view')) {\r\n    var newBlock = document.createElement('div');\r\n    newBlock.className = 'rz-promo-banner';\r\n  \r\n  \r\n       if (getLang()==1 ) { newBlock.innerHTML = ' <style>.rz-promo-banner {overflow:hidden;background: url(https://i2.rozetka.ua/images/50/50858.jpg) no-repeat center;text-align:center; position:relative; border-radius:4px;margin-bottom:24px;margin-left: .6em;margin-right: 2.4%; height:  390px;}@media screen and (max-width: 1690px){.rz-promo-banner{background-size:cover;height:330px;margin-right: 1.3%;}}@media screen and (max-width: 1280px){.rz-promo-banner{margin-right: 2%;height:  300px;}}</style>';}\r\n\r\n      else {newBlock.innerHTML = ' <style>.rz-promo-banner {overflow:hidden;background: url(https://i1.rozetka.ua/images/50/50852.jpg) no-repeat center;text-align:center; position:relative; border-radius:4px;margin-bottom:24px;margin-left: .6em;margin-right: 2.4%; height:  390px;}@media screen and (max-width: 1690px){.rz-promo-banner{background-size:cover;height:330px;margin-right: 1.3%;}}@media screen and (max-width: 1280px){.rz-promo-banner{margin-right: 2%;height:  300px;}}</style>'; }\r\n\r\n\r\n     parentBlock = document.querySelector('.title-page-with-filters-indent');\r\n     if (!document.querySelector('.rz-promo-banner')) {\r\n      parentBlock.insertBefore(newBlock, parentBlock.lastChild);\r\n     }\r\n   \r\n   \r\n  }\r\n\r\n}\r\n\r\nAddBanner();",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "rasprodaja/c83850/"
+              },
+              {
+                "type": "contains",
+                "url": "/utsenennye"
+              },
+              {
+                "type": "contains",
+                "url": "/utsenennoe"
+              },
+              {
+                "type": "contains",
+                "url": "/458520/c458520/"
+              },
+              {
+                "type": "contains",
+                "url": "/458525/c458525/"
+              },
+              {
+                "type": "contains",
+                "url": "/utsenennie"
+              },
+              {
+                "type": "contains",
+                "url": "/458510/c458510/"
+              },
+              {
+                "type": "contains",
+                "url": "/458515/c458515/"
+              },
+              {
+                "type": "contains",
+                "url": "/458770/c458770/"
+              },
+              {
+                "type": "contains",
+                "url": "/utsenennaja"
+              },
+              {
+                "type": "contains",
+                "url": "/utsenennaya"
+              },
+              {
+                "type": "contains",
+                "url": "/458555/c458555/"
+              },
+              {
+                "type": "contains",
+                "url": "/ucenennie"
+              },
+              {
+                "type": "contains",
+                "url": "/4625968/c4625968/"
+              },
+              {
+                "type": "contains",
+                "url": "/4628131/c4628131/"
+              },
+              {
+                "type": "contains",
+                "url": "/458535/c458535/"
+              }
+            ]
+          },
+          "type": "js",
+          "uses_overlay": false
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "data": [
+        {
+          "_id": "5a7acc19a3faf55b0d68594e",
+          "date_filter": {
+            "enabled": false,
+            "from_date": null,
+            "to_date": null
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "always",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "regex": "\\/p[0-9]+\\/",
+                "type": "regex"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5a718da9a3faf538e7a259da",
+          "date_filter": {
+            "enabled": false,
+            "from_date": null,
+            "to_date": null
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "always",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "https://my.rozetka.com.ua/ua/signup/"
+              },
+              {
+                "type": "contains",
+                "url": "https://my.rozetka.com.ua/signup/"
+              },
+              {
+                "type": "contains",
+                "url": "https://my.rozetka.com.ua/signin/"
+              },
+              {
+                "type": "contains",
+                "url": "https://my.rozetka.com.ua/ua/signin/"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5b56db9cd537f3000f9bbd24",
+          "date_filter": {
+            "enabled": false,
+            "from_date": null,
+            "to_date": null
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "only_once",
+          "trigger": {
+            "exclude_pages": [
+              {
+                "type": "contains",
+                "url": "/checkout/"
+              },
+              {
+                "type": "contains",
+                "url": "/premium/"
+              },
+              {
+                "type": "contains",
+                "url": "/promovodafone/"
+              },
+              {
+                "type": "contains",
+                "url": "/promo/vodafone"
+              },
+              {
+                "type": "contains",
+                "url": "/vodafone_fashion/"
+              },
+              {
+                "type": "contains",
+                "url": "/search/"
+              },
+              {
+                "type": "contains",
+                "url": "/promo/"
+              },
+              {
+                "type": "contains",
+                "url": "/producer/"
+              },
+              {
+                "type": "contains",
+                "url": "/seller/"
+              },
+              {
+                "type": "contains",
+                "url": "/profile/"
+              }
+            ],
+            "include_pages": [
+              {
+                "type": "any"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5b583610d3ae18000d8d1c7f",
+          "date_filter": {
+            "enabled": false,
+            "from_date": null,
+            "to_date": null
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "always",
+          "trigger": {
+            "exclude_pages": [
+              {
+                "type": "contains",
+                "url": "/checkout"
+              }
+            ],
+            "include_pages": [
+              {
+                "type": "any"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5b193726a3faf52b5441d543",
+          "date_filter": {
+            "enabled": false,
+            "from_date": null,
+            "to_date": null
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "always",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "regex": "\\/p[0-9]+\\/",
+                "type": "regex"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5b041c60a3faf50130a5682a",
+          "date_filter": {
+            "enabled": true,
+            "from_date": 1561496400,
+            "to_date": 1562187599
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "always",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "regex": "\\/p[0-9]+\\/",
+                "type": "regex"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5ca60abdde09cd0012ff8236",
+          "date_filter": {
+            "enabled": false,
+            "from_date": null,
+            "to_date": null
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "always",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "sezonnost-69521=letnie-272710"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5cac5c4c0c7c3c0015200316",
+          "date_filter": {
+            "enabled": true,
+            "from_date": 1559509200,
+            "to_date": 1561928399
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "always",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "/p"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5c0fb461b40b5a00149be180",
+          "date_filter": {
+            "enabled": false,
+            "from_date": null,
+            "to_date": null
+          },
+          "device_target": {
+            "type": "any"
+          },
+          "frequency": "always",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "/promo/sportsale"
+              },
+              {
+                "type": "contains",
+                "url": "/promo/sportsale_sss"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5c98d9110d331f0014f833ab",
+          "date_filter": {
+            "enabled": false,
+            "from_date": null,
+            "to_date": null
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "always",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "/p"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5965d43d8304342040e521aa",
+          "date_filter": {
+            "enabled": false,
+            "from_date": null,
+            "to_date": null
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "only_once",
+          "trigger": {
+            "exclude_pages": [
+              {
+                "type": "contains",
+                "url": "/checkout/"
+              },
+              {
+                "type": "contains",
+                "url": "/apps/"
+              },
+              {
+                "type": "contains",
+                "url": "/promovodafone/"
+              },
+              {
+                "type": "contains",
+                "url": "/promo/vodafone"
+              },
+              {
+                "type": "contains",
+                "url": "/vodafone_fashion/"
+              },
+              {
+                "type": "contains",
+                "url": "/blackfriday/"
+              }
+            ],
+            "include_pages": [
+              {
+                "type": "any"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5cd967ff6e3aba001212215f",
+          "date_filter": {
+            "enabled": true,
+            "from_date": 1557694800,
+            "to_date": 1561928399
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "only_once",
+          "trigger": {
+            "exclude_pages": [
+              {
+                "type": "contains",
+                "url": "/checkout/"
+              },
+              {
+                "type": "contains",
+                "url": "/promovodafone/"
+              },
+              {
+                "type": "contains",
+                "url": "/promo/vodafone"
+              },
+              {
+                "type": "contains",
+                "url": "/vodafone_fashion/"
+              },
+              {
+                "type": "contains",
+                "url": "/promo/look/"
+              },
+              {
+                "type": "contains",
+                "url": "/promo/mastercard"
+              },
+              {
+                "type": "contains",
+                "url": "/freedelivery/"
+              },
+              {
+                "type": "contains",
+                "url": "/promo/beauty/"
+              },
+              {
+                "type": "contains",
+                "url": "/installment/"
+              },
+              {
+                "type": "contains",
+                "url": "/promo/"
+              },
+              {
+                "type": "contains",
+                "url": "/pickpoint/"
+              },
+              {
+                "type": "contains",
+                "url": "/outdoors/"
+              },
+              {
+                "type": "contains",
+                "url": "/promo/mothersdaysale/"
+              },
+              {
+                "type": "contains",
+                "url": "/promo/mothersday/"
+              },
+              {
+                "type": "contains",
+                "url": "/promo/banner_mothersday/"
+              }
+            ],
+            "include_pages": [
+              {
+                "type": "any"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5c05159752222f0014f7e373",
+          "date_filter": {
+            "enabled": false,
+            "from_date": null,
+            "to_date": null
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "once_per_visit",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "/c4647534/"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5d1245ed36663d0013a2e9f2",
+          "date_filter": {
+            "enabled": true,
+            "from_date": 1561525200,
+            "to_date": 1562133659
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "only_once",
+          "trigger": {
+            "exclude_pages": [
+              {
+                "type": "contains",
+                "url": "/checkout/"
+              },
+              {
+                "type": "contains",
+                "url": "/promovodafone/"
+              },
+              {
+                "type": "contains",
+                "url": "/promo/vodafone"
+              },
+              {
+                "type": "contains",
+                "url": "/vodafone_fashion/"
+              },
+              {
+                "type": "contains",
+                "url": "/promo/"
+              }
+            ],
+            "include_pages": [
+              {
+                "type": "any"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5adef6aea3faf54fc9f57463",
+          "date_filter": {
+            "enabled": false,
+            "from_date": null,
+            "to_date": null
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "always",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "exact",
+                "url": "https://rozetka.com.ua/"
+              },
+              {
+                "type": "exact",
+                "url": "https://rozetka.com.ua/ua/"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5bd6ee3c55ab8a00147d4b85",
+          "date_filter": {
+            "enabled": false,
+            "from_date": null,
+            "to_date": null
+          },
+          "device_target": {
+            "type": "any"
+          },
+          "frequency": "always",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "/c"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5c52cc26ae0a9a0013a99233",
+          "date_filter": {
+            "enabled": true,
+            "from_date": 1561928400,
+            "to_date": 1563137999
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "always",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "/p"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5d14dc66984bfc0012e234ee",
+          "date_filter": {
+            "enabled": true,
+            "from_date": 1561928400,
+            "to_date": 1563137999
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "only_once",
+          "trigger": {
+            "exclude_pages": [
+              {
+                "type": "contains",
+                "url": "/checkout/"
+              },
+              {
+                "type": "contains",
+                "url": "/promovodafone/"
+              },
+              {
+                "type": "contains",
+                "url": "/vodafone_fashion/"
+              },
+              {
+                "type": "contains",
+                "url": "/mastercard/"
+              },
+              {
+                "type": "contains",
+                "url": "/promo/"
+              }
+            ],
+            "include_pages": [
+              {
+                "type": "any"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5d03861d8e71cf00156fc7b8",
+          "date_filter": {
+            "enabled": true,
+            "from_date": 1560459600,
+            "to_date": 1562965199
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "only_once",
+          "trigger": {
+            "exclude_pages": [
+              {
+                "type": "contains",
+                "url": "/checkout/"
+              },
+              {
+                "type": "contains",
+                "url": "/promovodafone/"
+              },
+              {
+                "type": "contains",
+                "url": "/promo/vodafone"
+              },
+              {
+                "type": "contains",
+                "url": "/vodafone_fashion/"
+              },
+              {
+                "type": "contains",
+                "url": "/promo/"
+              },
+              {
+                "type": "contains",
+                "url": "/ukrposhta/"
+              },
+              {
+                "type": "contains",
+                "url": "/freedelivery/"
+              },
+              {
+                "type": "contains",
+                "url": "/freeshipping/"
+              },
+              {
+                "type": "contains",
+                "url": "/start/"
+              },
+              {
+                "type": "contains",
+                "url": "/pickpoint/"
+              },
+              {
+                "type": "contains",
+                "url": "/mpoint/"
+              },
+              {
+                "type": "contains",
+                "url": "/installment/"
+              }
+            ],
+            "include_pages": [
+              {
+                "type": "any"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5cb74af9df1f7c0011901e9b",
+          "date_filter": {
+            "enabled": true,
+            "from_date": 1552860000,
+            "to_date": 1561928399
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "only_once",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "/dacha-sad-ogorod/c2394297/"
+              },
+              {
+                "type": "contains",
+                "url": "/2577232/c2577232/"
+              },
+              {
+                "type": "contains",
+                "url": "/sport-i-uvlecheniya/c4627893/"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5cdea759fce8400012e86be5",
+          "date_filter": {
+            "enabled": true,
+            "from_date": 1558040400,
+            "to_date": 1564606799
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "only_once",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "air_conditioners/c80133/"
+              },
+              {
+                "type": "contains",
+                "url": "climate/c80079/"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5cdebc519bc38500130c63a2",
+          "date_filter": {
+            "enabled": true,
+            "from_date": 1558299600,
+            "to_date": 1560977999
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "only_once",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "podguzniki-i-pelenanie/c3973646/"
+              },
+              {
+                "type": "contains",
+                "url": "diapers/c103306/58952=174772/"
+              },
+              {
+                "type": "contains",
+                "url": "diapers/c103306/28093=28241;58952=174772/"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5ced4170f4b02a0014327cdb",
+          "date_filter": {
+            "enabled": true,
+            "from_date": 1558904400,
+            "to_date": 1560718799
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "only_once",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "irons/c80161/"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5ce6b77416ef8b00104c6647",
+          "date_filter": {
+            "enabled": true,
+            "from_date": 1558558800,
+            "to_date": 1560632399
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "only_once",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "telefony-tv-i-ehlektronika/c4627949/"
+              },
+              {
+                "type": "contains",
+                "url": "tv/c80015/"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5cebd515d7b73a0011ef0e57",
+          "date_filter": {
+            "enabled": true,
+            "from_date": 1558904400,
+            "to_date": 1560718799
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "only_once",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "builtin/c80078/"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5d0107d13c98490017784cae",
+          "date_filter": {
+            "enabled": true,
+            "from_date": 1560286800,
+            "to_date": 1561928399
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "only_once",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "builtin/c80078/"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5cee9104dbb5d30011460b00",
+          "date_filter": {
+            "enabled": true,
+            "from_date": 1559077200,
+            "to_date": 1560718799
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "only_once",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "gigiena-i-uhod-za-rebenkom/c197324/"
+              },
+              {
+                "type": "contains",
+                "url": "dacha-sad-ogorod/c2394297/"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5cffcb9b6c444500125b558b",
+          "date_filter": {
+            "enabled": true,
+            "from_date": 1560200400,
+            "to_date": 1562014799
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "only_once",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "freezers/c80203/"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5d0b9dae02046100165ae17e",
+          "date_filter": {
+            "enabled": true,
+            "from_date": 1560978000,
+            "to_date": 1561928399
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "only_once",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "electric_hobs/c80225/"
+              },
+              {
+                "type": "contains",
+                "url": "ovens/c80141/filter/50655=110660/"
+              },
+              {
+                "type": "contains",
+                "url": "ovens/c80141/filter/"
+              },
+              {
+                "type": "contains",
+                "url": "cookers/c80122/filter/"
+              },
+              {
+                "type": "contains",
+                "url": "hobs/c80137/"
+              },
+              {
+                "type": "contains",
+                "url": "ovens/c80141/"
+              },
+              {
+                "type": "contains",
+                "url": "builtin/c80078/"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5cf7d216ab67b70014cbea0e",
+          "date_filter": {
+            "enabled": true,
+            "from_date": 1560114000,
+            "to_date": 1561928399
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "only_once",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "telefony-tv-i-ehlektronika/c4627949/"
+              },
+              {
+                "type": "contains",
+                "url": "telefony/c4627900/"
+              },
+              {
+                "type": "contains",
+                "url": "mobile-phones/c80003/"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5d00d9f7811dfd001351e528",
+          "date_filter": {
+            "enabled": true,
+            "from_date": 1560286800,
+            "to_date": 1561928399
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "only_once",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "telefony-tv-i-ehlektronika/c4627949/"
+              },
+              {
+                "type": "contains",
+                "url": "telefony/c4627900/"
+              },
+              {
+                "type": "contains",
+                "url": "mobile-phones/c80003/"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5d1a241a260adc000fae26b5",
+          "date_filter": {
+            "enabled": true,
+            "from_date": 1561928400,
+            "to_date": 1564261199
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "only_once",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "builtin/c80078/"
+              },
+              {
+                "type": "contains",
+                "url": "ovens/c80141/"
+              },
+              {
+                "type": "contains",
+                "url": "hobs/c80137/"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5d122c97ed386c0013580585",
+          "date_filter": {
+            "enabled": true,
+            "from_date": 1561410000,
+            "to_date": 1563137999
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "only_once",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "multivarki/c112986/filter/"
+              },
+              {
+                "type": "contains",
+                "url": "multivarki/c112986/"
+              },
+              {
+                "type": "contains",
+                "url": "multivarki/c112986/filter/producer=moulinex/"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5d0cf7e3a7f45a0010bea4d7",
+          "date_filter": {
+            "enabled": true,
+            "from_date": 1561064400,
+            "to_date": 1562360399
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "only_once",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "meat_choppers/c80176/"
+              },
+              {
+                "type": "contains",
+                "url": "tovary-dlya-doma/c2394287/"
+              },
+              {
+                "type": "contains",
+                "url": "posuda-dlia-kuhni/c4626594/"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5d0cf18d8d823900138317a0",
+          "date_filter": {
+            "enabled": true,
+            "from_date": 1561064400,
+            "to_date": 1562360399
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "only_once",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "electric_kettles/c80160/"
+              },
+              {
+                "type": "contains",
+                "url": "posuda-dlia-kuhni/c4626594/"
+              },
+              {
+                "type": "contains",
+                "url": "koffee/c4625011/"
+              },
+              {
+                "type": "contains",
+                "url": "chai/c4625004/"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5d1b0a565f14ac0011823eb8",
+          "date_filter": {
+            "enabled": true,
+            "from_date": 1562014800,
+            "to_date": 1562792399
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "only_once",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "vino/c4594285/"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5d1b0d1c9055450012147907",
+          "date_filter": {
+            "enabled": true,
+            "from_date": 1562014800,
+            "to_date": 1563397199
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "only_once",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "hairdryers/c81227/"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5bf43e5b8f87310013dba9f8",
+          "date_filter": {
+            "enabled": true,
+            "from_date": null,
+            "to_date": 1542923100
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "only_once",
+          "trigger": {
+            "exclude_pages": [
+              {
+                "type": "contains",
+                "url": "/checkout/"
+              },
+              {
+                "type": "contains",
+                "url": "/promovodafone/"
+              },
+              {
+                "type": "contains",
+                "url": "/promo/vodafone"
+              },
+              {
+                "type": "contains",
+                "url": "/vodafone_fashion/"
+              },
+              {
+                "type": "contains",
+                "url": "/promo/banner_summercocktail/"
+              },
+              {
+                "type": "contains",
+                "url": "/promo/oktoberfest/"
+              },
+              {
+                "type": "contains",
+                "url": "/promo/blackfriday2018/"
+              },
+              {
+                "type": "contains",
+                "url": "/banner_oktoberfest/"
+              },
+              {
+                "type": "contains",
+                "url": "/promo/look/"
+              },
+              {
+                "type": "contains",
+                "url": "/promo/repetitionbfsale/"
+              },
+              {
+                "type": "contains",
+                "url": "/promo/bfrepetition/"
+              },
+              {
+                "type": "contains",
+                "url": "/promo/blackfriday/"
+              }
+            ],
+            "include_pages": [
+              {
+                "type": "any"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "59d34fe28304349f5ddfc0e0",
+          "date_filter": {
+            "enabled": false,
+            "from_date": null,
+            "to_date": null
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "once_per_visit",
+          "trigger": {
+            "exclude_pages": [
+              {
+                "type": "contains",
+                "url": "/promovodafone/"
+              },
+              {
+                "type": "contains",
+                "url": "/promo/vodafone"
+              },
+              {
+                "type": "contains",
+                "url": "/blackfriday/"
+              }
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "/clubs/nokia/"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "58f5f86983043435cb47b8ea",
+          "date_filter": {
+            "enabled": false,
+            "from_date": null,
+            "to_date": null
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "until_visitor_interacts",
+          "trigger": {
+            "exclude_pages": [
+              {
+                "type": "contains",
+                "url": "/checkout/"
+              },
+              {
+                "type": "contains",
+                "url": "/promovodafone/"
+              },
+              {
+                "type": "contains",
+                "url": "/promo/vodafone"
+              },
+              {
+                "type": "contains",
+                "url": "/blackfriday/"
+              }
+            ],
+            "include_pages": [
+              {
+                "type": "any"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5ca20b40aa443000134ff2f4",
+          "date_filter": {
+            "enabled": false,
+            "from_date": null,
+            "to_date": null
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "only_once",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "/p"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5915b72783043431a77c5ab5",
+          "date_filter": {
+            "enabled": false,
+            "from_date": null,
+            "to_date": null
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "once_per_visit",
+          "trigger": {
+            "exclude_pages": [
+              {
+                "type": "contains",
+                "url": "/promovodafone/"
+              },
+              {
+                "type": "contains",
+                "url": "/promo/vodafone"
+              }
+            ],
+            "include_pages": [
+              {
+                "regex": "\\/c[0-9]+(\\/[^?]{0,}producer\\=samsung[^,])|(\\/v0{0,}12\\/)",
+                "type": "regex"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5d0215b31facac0014109372",
+          "date_filter": {
+            "enabled": true,
+            "from_date": 1562014800,
+            "to_date": 1564606799
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "only_once",
+          "trigger": {
+            "exclude_pages": [
+              {
+                "type": "contains",
+                "url": "/checkout/"
+              },
+              {
+                "type": "contains",
+                "url": "/promovodafone/"
+              },
+              {
+                "type": "contains",
+                "url": "/promo/vodafone"
+              },
+              {
+                "type": "contains",
+                "url": "/vodafone_fashion/"
+              },
+              {
+                "type": "contains",
+                "url": "/promo/"
+              },
+              {
+                "type": "contains",
+                "url": "/ukrposhta/"
+              },
+              {
+                "type": "contains",
+                "url": "/freedelivery/"
+              },
+              {
+                "type": "contains",
+                "url": "/freeshipping/"
+              },
+              {
+                "type": "contains",
+                "url": "/promotions/samsung_new_m10"
+              },
+              {
+                "type": "contains",
+                "url": "/start/"
+              },
+              {
+                "type": "contains",
+                "url": "/pickpoint/"
+              },
+              {
+                "type": "contains",
+                "url": "/mpoint/"
+              },
+              {
+                "type": "contains",
+                "url": "/installment/"
+              },
+              {
+                "type": "contains",
+                "url": "/masterdelivery/"
+              },
+              {
+                "type": "contains",
+                "url": "/alldelivery/"
+              }
+            ],
+            "include_pages": [
+              {
+                "type": "any"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5ce6a3afd366e100138c3791",
+          "date_filter": {
+            "enabled": true,
+            "from_date": 1558558800,
+            "to_date": 1560459599
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "only_once",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "/kids/c88468/"
+              },
+              {
+                "type": "contains",
+                "url": "/detskie-igrushki/c4265805/"
+              },
+              {
+                "type": "contains",
+                "url": "/progulki-i-aktivniy-otdyh/c3933347/"
+              },
+              {
+                "type": "contains",
+                "url": "/detskaya-komnata/c102573/"
+              },
+              {
+                "type": "contains",
+                "url": "/dlya-samyh-malenkih/c102298/"
+              },
+              {
+                "type": "contains",
+                "url": "/visokotehnologichnie-igrushki/c4630656/"
+              },
+              {
+                "type": "contains",
+                "url": "/razvivayuschie-igry/c100784/"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "58cbd4c4830434a02388b216",
+          "date_filter": {
+            "enabled": false,
+            "from_date": null,
+            "to_date": null
+          },
+          "device_target": {
+            "type": "any"
+          },
+          "frequency": "always",
+          "trigger": {
+            "exclude_pages": [
+              
+            ],
+            "include_pages": [
+              {
+                "regex": "\\/p[0-9]+\\/",
+                "type": "regex"
+              }
+            ]
+          }
+        },
+        {
+          "_id": "5a0164d4a3faf51bf6b6d799",
+          "date_filter": {
+            "enabled": false,
+            "from_date": null,
+            "to_date": null
+          },
+          "device_target": {
+            "type": "desktop"
+          },
+          "frequency": "once_per_visit",
+          "trigger": {
+            "exclude_pages": [
+              {
+                "type": "contains",
+                "url": "/checkout/"
+              }
+            ],
+            "include_pages": [
+              {
+                "type": "contains",
+                "url": "rozetka.com.ua"
+              }
+            ]
+          }
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "data": [
+        
+      ],
+      "status": "ok"
+    }
+  ],
+  "start_time": 1562062478.7790475,
+  "success": true
+}
