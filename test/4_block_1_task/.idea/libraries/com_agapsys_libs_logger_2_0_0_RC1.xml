@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.agapsys.libs:logger:2.0.0-RC1" type="repository">
+    <properties maven-id="com.agapsys.libs:logger:2.0.0-RC1" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/logger-2.0.0-RC1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
