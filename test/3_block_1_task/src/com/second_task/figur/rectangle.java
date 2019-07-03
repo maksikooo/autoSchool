@@ -1,11 +1,18 @@
 package com.second_task.figur;
 
-public class rectangle extends figur{
+import java.util.Random;
+
+public class rectangle implements figur{
     private String name;
-    private int coord;
+    private int area;
+    @Override
+    public void setArea(){
+        Random random = new Random();
+        area=random.nextInt(50)+1;
+    }
     @Override
     public int getArea() {
-        return super.getArea();
+        return area;
     }
 
     @Override
@@ -19,7 +26,7 @@ public class rectangle extends figur{
 
     @Override
     public int getCoordinate() {
-        return coord;
+        return 0;
     }
     public void setCoordinate(int coord) {
     }

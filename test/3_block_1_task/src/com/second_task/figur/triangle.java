@@ -2,7 +2,7 @@ package com.second_task.figur;
 
 import java.util.Random;
 
-public class square implements figur{
+public class triangle implements figur {
     private String name;
     private int area;
     @Override
@@ -11,17 +11,8 @@ public class square implements figur{
         area=random.nextInt(50)+1;
     }
     @Override
-    public int getArea() {
-        return area;
-    }
-
-    @Override
-    public void setCoordinate(int coord) {
-
-    }
-    @Override
-    public int getCoordinate(){
-        return  0;
+    public String getName() {
+        return name;
     }
 
     @Override
@@ -30,7 +21,17 @@ public class square implements figur{
     }
 
     @Override
-    public String getName() {
-        return name;
+    public void setCoordinate(int coord) {
+
+    }
+
+    @Override
+    public int getCoordinate() {
+        return 0;
+    }
+
+    @Override
+    public int getArea() {
+        return area;
     }
 }
