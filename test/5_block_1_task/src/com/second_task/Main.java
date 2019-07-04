@@ -2,9 +2,13 @@ package com.second_task;
 
 import java.awt.*;
 import java.io.BufferedReader;
+import java.lang.reflect.Array;
 import java.time.LocalDate;
 import java.util.*;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 import com.second_task.randomStr;
 
 public class Main {
@@ -343,7 +347,27 @@ public class Main {
                 map.put("ЫЫк1", "Кло");
                 map.put("ыы1", "s");
                 System.out.println(map);
-            }default:{
+            }break;
+            case "18":{
+                randomStr r = new randomStr();
+             List<String > list = new ArrayList<>();
+             for (int j = 0 ; j<50 ; j++)
+             list.add(r.generateRandomWord(7));
+             list.add("");
+             list.add("");
+             list.add("тест д");
+             list.add("А dолжна быть в начале");
+             list.add("Я dолжна быть в конце");
+             System.out.println(list);
+             List<String> result1 = list.stream()
+                     .filter(line -> line.length()>0)
+                     .filter(line ->!line.contains("д"))
+                     .sorted()
+                     .collect(Collectors.toList());
+             result1.forEach(System.out::println);
+
+            }break;
+            default:{
                 System.out.println("Goodbye");
             }
         }
